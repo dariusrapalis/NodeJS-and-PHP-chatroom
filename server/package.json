@@ -1,0 +1,25 @@
+{
+  "name": "nodejsphpchat",
+  "version": "1.0.0",
+  "description": "NodeJS and PHP chatroom",
+  "main": "chatroom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdarius/NodeJS-and-PHP-chatroom.git"
+  },
+  "author": "Darius Rapalis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdarius/NodeJS-and-PHP-chatroom/issues"
+  },
+  "homepage": "https://github.com/rdarius/NodeJS-and-PHP-chatroom#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.74.0",
+    "sanitize-html": "^1.13.0",
+    "socket.io": "^1.4.8"
+  }
+}

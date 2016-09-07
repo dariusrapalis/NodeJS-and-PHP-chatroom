@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NodeJS and PHP Chat Room</title>
+        <style>
+        body {
+            background: #456789;
+        }
+            .ChatBox {
+                width: 640px;
+                margin: auto;
+                background: #012345;
+                color: white;
+            }
+            a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            input,textarea {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                background: white;
+                padding: 5px;
+                margin: 0;
+                border: 1px solid black;
+            }
+            .chatProfilePicture {
+                max-height: 36px;
+                max-width: 36px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ChatBox">
+            <textarea class="form-control" id="ChatMessage" placeholder="Message..."></textarea>
+            <input type="submit" class="form-control" id="ChatWrite" value="Write" />
+            <div class="chat-wrapper">
+                <div id="ChatMessageBox">
+                    <div id="ChatPlaceholder">Please wait.... Chat is loading</div>
+                </div>
+            </div>
+            <audio id="chatSound" hidden>
+                <source src="/sounds/chat.wav" type="audio/wav">
+                <source src="/sounds/chat.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id="data" data-private-key="PRIVATE KEY OF USER HWO IS WRITING TO CHAT VIA THIS NODE PHP API"></div>
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="/server/node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+        <script src="chat.js"></script>
+    </body>
+</html>
